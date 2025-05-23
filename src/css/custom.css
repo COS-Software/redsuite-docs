@@ -1,0 +1,90 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #B71C1C;
+  --ifm-color-primary-dark: #A01818;
+  --ifm-color-primary-darker: #8C1515;
+  --ifm-color-primary-darkest: #7A1212;
+  --ifm-color-primary-light: #D32F2F;
+  --ifm-color-primary-lighter: #E57373;
+  --ifm-color-primary-lightest: #FFCDD2;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #333333;
+  --ifm-navbar-background-color: #B71C1C;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-footer-background-color: #B71C1C;
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-link-color: #B71C1C;
+  --ifm-menu-color: #333333;
+  --ifm-menu-color-background-active: #FFEBEE;
+  --ifm-menu-color-active: #B71C1C;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #B71C1C;
+  --ifm-color-primary-dark: #A01818;
+  --ifm-color-primary-darker: #8C1515;
+  --ifm-color-primary-darkest: #7A1212;
+  --ifm-color-primary-light: #D32F2F;
+  --ifm-color-primary-lighter: #E57373;
+  --ifm-color-primary-lightest: #FFCDD2;
+  --ifm-background-color: #1a1a1a;
+  --ifm-navbar-background-color: #B71C1C;
+  --ifm-footer-background-color: #B71C1C;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply Montserrat font to all text */
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar and Footer styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__link {
+  color: #ffffff !important;
+}
+
+.navbar__link:hover {
+  color: #ffebee !important;
+}
+
+.footer {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styling */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-dark) !important;
+}
+
+/* Card styling */
+.card {
+  border: 1px solid #eeeeee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
